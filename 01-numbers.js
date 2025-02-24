@@ -45,7 +45,9 @@ console.log(10n -BigInt(4))
 console.log(5n / 2n)
 console.log(5 / 2)*/
 
+
+//Math
+
 console.log(Math.E)
 console.log(Math.PI)
 
-4:02
