@@ -28,8 +28,24 @@ const strFloat = '42.42'
 console.log(Number.parseInt(strFloat))
 console.log(Number.parseFloat(strFloat))*/
 
-console.log(+strInt, +strFloat)
+//console.log(+strInt, +strFloat)
 
-console.log(0.1 + 0.2)
+const fixed = (0.1 + 0.2).toFixed(10)
+console.log(parseFloat(fixed))
+ 
+// BigInt 
 
-3:54
+//console.log(BigInt(Number.MAX_SAFE_INTEGER) + 
+//94224980n)
+//console.log(-42n) 
+//console/log(42.42n) //error
+// console.log(10n -4) // error
+/*console.log(parseInt(10n) - 4)
+console.log(10n -BigInt(4))
+console.log(5n / 2n)
+console.log(5 / 2)*/
+
+console.log(Math.E)
+console.log(Math.PI)
+
+4:02
