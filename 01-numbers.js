@@ -51,3 +51,7 @@ console.log(5 / 2)*/
 console.log(Math.E)
 console.log(Math.PI)
 
+console.log(Math.sqrt(25))
+console.log(Math.pow(2,3))
+console.log(Math.abs(-5))
+4_03_31
