@@ -30,8 +30,8 @@ console.log(Number.parseFloat(strFloat))*/
 
 //console.log(+strInt, +strFloat)
 
-const fixed = (0.1 + 0.2).toFixed(10)
-console.log(parseFloat(fixed))
+/*const fixed = (0.1 + 0.2).toFixed(10)
+console.log(parseFloat(fixed))*/
  
 // BigInt 
 
@@ -48,10 +48,25 @@ console.log(5 / 2)*/
 
 //Math
 
-console.log(Math.E)
-console.log(Math.PI)
+/*console.log(Math.E)
+console.log(Math.PI)*/
 
-console.log(Math.sqrt(25))
+const myNum = 4.9
+
+/*console.log(Math.sqrt(25))
 console.log(Math.pow(2,3))
 console.log(Math.abs(-5))
-4_03_31
+console.log(Math.max(2, 5, 42, 199, 0))
+console.log(Math.min(2, 5, 42, 199, 0))*/
+/*console.log(Math.floor(myNum))
+console.log(Math.ceil(4.1))
+console.log(Math.round(4.6))
+console.log(Math.trunc(myNum))
+console.log(Math.random(myNum))*/
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+const num1 = getRandomNumber(10, 100)
+console.log(num1)
