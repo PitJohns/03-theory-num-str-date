@@ -1,5 +1,5 @@
 // Function Declaration 
-function greet(name) {
+/*function greet(name) {
     console.log('Hello - ', name)
 }
 // Function Expression можно использовать 
@@ -9,7 +9,7 @@ const greet2 = function (name) {
 }
 
 greet('Vladilen')
-greet2('Vladilen')
+greet2('Vladilen')*/
 
 //console.dir(greet.toString())
 
@@ -17,6 +17,36 @@ greet2('Vladilen')
      greet('Vladilen2')
 }, 1500)*/
 
-/*setInterval(function () {
-    console.log(1)
+
+/*let counter = 0
+const interval = setInterval(function () {
+    if (counter === 5) {
+      clearInterval(interval)
+    } else {
+        console.log(++counter)
+    }    
 }, 2000)*/
+
+//Arrow function
+
+function greet(name) {
+    console.log('Hello - ', name)
+}
+ 
+const arrow = (name, age) => {
+    console.log('Hello - ', name, age)
+}
+
+const arrow2 = (name) => console.log('Hello - ', name)
+
+function pow(num, exp) {
+    return Math.pow(num, exp)
+}
+const pow2 = (num, exp) =>  Math.pow(num, exp)
+
+console.log(pow2(2, 3))
+
+// ==== Default Parameters
+const sum = (a, b) => a + b
+
+console.log(sum(40, 2))
