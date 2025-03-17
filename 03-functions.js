@@ -44,9 +44,32 @@ function pow(num, exp) {
 }
 const pow2 = (num, exp) =>  Math.pow(num, exp)
 
-console.log(pow2(2, 3))
+//console.log(pow2(2, 3))
 
 // ==== Default Parameters
-const sum = (a, b) => a + b
+const sum = (a = 40, b = a/ 2  ) => a + b
 
-console.log(sum(40, 2))
+//console.log(sum(40, 2))
+//console.log(sum())
+
+function sumAll(...numbers) {
+   /* let res = 0
+    for(let num of numbers) {
+        res += num
+    }
+    return res*/
+    return numbers.reduce((acc, cur) => (acc += cur), 0)
+}
+
+console.log(sumAll(1, 2, 3, 4, 5))
+
+// Closures 
+
+function createPerson(name) {
+   return function(lastname) {
+    console.log(name + ' ' + lastname)
+   }
+}
+
+const addLastName = createPerson('Vladilen')   
+addLastName('Minin')
