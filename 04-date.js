@@ -1,0 +1,1 @@
+const now = console.log(new Date())

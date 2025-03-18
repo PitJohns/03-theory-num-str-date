@@ -71,5 +71,6 @@ function createPerson(name) {
    }
 }
 
-const addLastName = createPerson('Vladilen')   
+const addLastName = createPerson('Vladilen1')   
 addLastName('Minin')
+addLastName('Petrov')
