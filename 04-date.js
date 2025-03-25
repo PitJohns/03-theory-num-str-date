@@ -38,7 +38,7 @@ timeBtn.onclick = bindMode('time')
 
 update()
 
-setInterval(update, 10)
+setInterval(update, 1000)
 
 function update() {
   output.textContent = format(mode)
